@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB48D3482020293500A09429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB48D3472020293500A09429 /* AppDelegate.swift */; };
-		DB48D34A2020293500A09429 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB48D3492020293500A09429 /* ViewController.swift */; };
-		DB48D34F2020293500A09429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB48D34E2020293500A09429 /* Assets.xcassets */; };
-		DB48D3522020293500A09429 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB48D3502020293500A09429 /* LaunchScreen.storyboard */; };
+		DBDDAAB52026BB8400E69BEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDDAAB42026BB8400E69BEE /* AppDelegate.swift */; };
+		DBDDAAB72026BB8400E69BEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDDAAB62026BB8400E69BEE /* ViewController.swift */; };
+		DBDDAABA2026BB8400E69BEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBDDAAB82026BB8400E69BEE /* Main.storyboard */; };
+		DBDDAABC2026BB8400E69BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBDDAABB2026BB8400E69BEE /* Assets.xcassets */; };
+		DBDDAABF2026BB8400E69BEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBDDAABD2026BB8400E69BEE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DB48D3442020293500A09429 /* AlertPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB48D3472020293500A09429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB48D3492020293500A09429 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB48D34E2020293500A09429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DB48D3512020293500A09429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DB48D3532020293500A09429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBDDAAB12026BB8400E69BEE /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBDDAAB42026BB8400E69BEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBDDAAB62026BB8400E69BEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBDDAAB92026BB8400E69BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBDDAABB2026BB8400E69BEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBDDAABE2026BB8400E69BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBDDAAC02026BB8400E69BEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DB48D3412020293500A09429 /* Frameworks */ = {
+		DBDDAAAE2026BB8300E69BEE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,71 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DB48D33B2020293500A09429 = {
+		DBDDAAA82026BB8300E69BEE = {
 			isa = PBXGroup;
 			children = (
-				DB48D3462020293500A09429 /* AlertPicker */,
-				DB48D3452020293500A09429 /* Products */,
+				DBDDAAB32026BB8400E69BEE /* Contacts */,
+				DBDDAAB22026BB8400E69BEE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DB48D3452020293500A09429 /* Products */ = {
+		DBDDAAB22026BB8400E69BEE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB48D3442020293500A09429 /* AlertPicker.app */,
+				DBDDAAB12026BB8400E69BEE /* Contacts.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DB48D3462020293500A09429 /* AlertPicker */ = {
+		DBDDAAB32026BB8400E69BEE /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				DB48D3472020293500A09429 /* AppDelegate.swift */,
-				DB48D3492020293500A09429 /* ViewController.swift */,
-				DB48D34E2020293500A09429 /* Assets.xcassets */,
-				DB48D3502020293500A09429 /* LaunchScreen.storyboard */,
-				DB48D3532020293500A09429 /* Info.plist */,
+				DBDDAAB42026BB8400E69BEE /* AppDelegate.swift */,
+				DBDDAAB62026BB8400E69BEE /* ViewController.swift */,
+				DBDDAAB82026BB8400E69BEE /* Main.storyboard */,
+				DBDDAABB2026BB8400E69BEE /* Assets.xcassets */,
+				DBDDAABD2026BB8400E69BEE /* LaunchScreen.storyboard */,
+				DBDDAAC02026BB8400E69BEE /* Info.plist */,
 			);
-			path = AlertPicker;
+			path = Contacts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DB48D3432020293500A09429 /* AlertPicker */ = {
+		DBDDAAB02026BB8300E69BEE /* Contacts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB48D3562020293500A09429 /* Build configuration list for PBXNativeTarget "AlertPicker" */;
+			buildConfigurationList = DBDDAAC32026BB8400E69BEE /* Build configuration list for PBXNativeTarget "Contacts" */;
 			buildPhases = (
-				DB48D3402020293500A09429 /* Sources */,
-				DB48D3412020293500A09429 /* Frameworks */,
-				DB48D3422020293500A09429 /* Resources */,
+				DBDDAAAD2026BB8300E69BEE /* Sources */,
+				DBDDAAAE2026BB8300E69BEE /* Frameworks */,
+				DBDDAAAF2026BB8300E69BEE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AlertPicker;
-			productName = AlertPicker;
-			productReference = DB48D3442020293500A09429 /* AlertPicker.app */;
+			name = Contacts;
+			productName = Contacts;
+			productReference = DBDDAAB12026BB8400E69BEE /* Contacts.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DB48D33C2020293500A09429 /* Project object */ = {
+		DBDDAAA92026BB8300E69BEE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Weijie Lin";
 				TargetAttributes = {
-					DB48D3432020293500A09429 = {
+					DBDDAAB02026BB8300E69BEE = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = DB48D33F2020293500A09429 /* Build configuration list for PBXProject "AlertPicker" */;
+			buildConfigurationList = DBDDAAAC2026BB8300E69BEE /* Build configuration list for PBXProject "Contacts" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -105,45 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = DB48D33B2020293500A09429;
-			productRefGroup = DB48D3452020293500A09429 /* Products */;
+			mainGroup = DBDDAAA82026BB8300E69BEE;
+			productRefGroup = DBDDAAB22026BB8400E69BEE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DB48D3432020293500A09429 /* AlertPicker */,
+				DBDDAAB02026BB8300E69BEE /* Contacts */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DB48D3422020293500A09429 /* Resources */ = {
+		DBDDAAAF2026BB8300E69BEE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB48D3522020293500A09429 /* LaunchScreen.storyboard in Resources */,
-				DB48D34F2020293500A09429 /* Assets.xcassets in Resources */,
+				DBDDAABF2026BB8400E69BEE /* LaunchScreen.storyboard in Resources */,
+				DBDDAABC2026BB8400E69BEE /* Assets.xcassets in Resources */,
+				DBDDAABA2026BB8400E69BEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DB48D3402020293500A09429 /* Sources */ = {
+		DBDDAAAD2026BB8300E69BEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB48D34A2020293500A09429 /* ViewController.swift in Sources */,
-				DB48D3482020293500A09429 /* AppDelegate.swift in Sources */,
+				DBDDAAB72026BB8400E69BEE /* ViewController.swift in Sources */,
+				DBDDAAB52026BB8400E69BEE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DB48D3502020293500A09429 /* LaunchScreen.storyboard */ = {
+		DBDDAAB82026BB8400E69BEE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DB48D3512020293500A09429 /* Base */,
+				DBDDAAB92026BB8400E69BEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBDDAABD2026BB8400E69BEE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBDDAABE2026BB8400E69BEE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -151,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DB48D3542020293500A09429 /* Debug */ = {
+		DBDDAAC12026BB8400E69BEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,7 +220,7 @@
 			};
 			name = Debug;
 		};
-		DB48D3552020293500A09429 /* Release */ = {
+		DBDDAAC22026BB8400E69BEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -258,30 +270,30 @@
 			};
 			name = Release;
 		};
-		DB48D3572020293500A09429 /* Debug */ = {
+		DBDDAAC42026BB8400E69BEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZPWDFT65EV;
-				INFOPLIST_FILE = AlertPicker/Info.plist;
+				INFOPLIST_FILE = Contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.weijielin.AlertPicker;
+				PRODUCT_BUNDLE_IDENTIFIER = me.weijielin.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DB48D3582020293500A09429 /* Release */ = {
+		DBDDAAC52026BB8400E69BEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZPWDFT65EV;
-				INFOPLIST_FILE = AlertPicker/Info.plist;
+				INFOPLIST_FILE = Contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.weijielin.AlertPicker;
+				PRODUCT_BUNDLE_IDENTIFIER = me.weijielin.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -291,25 +303,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DB48D33F2020293500A09429 /* Build configuration list for PBXProject "AlertPicker" */ = {
+		DBDDAAAC2026BB8300E69BEE /* Build configuration list for PBXProject "Contacts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB48D3542020293500A09429 /* Debug */,
-				DB48D3552020293500A09429 /* Release */,
+				DBDDAAC12026BB8400E69BEE /* Debug */,
+				DBDDAAC22026BB8400E69BEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB48D3562020293500A09429 /* Build configuration list for PBXNativeTarget "AlertPicker" */ = {
+		DBDDAAC32026BB8400E69BEE /* Build configuration list for PBXNativeTarget "Contacts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB48D3572020293500A09429 /* Debug */,
-				DB48D3582020293500A09429 /* Release */,
+				DBDDAAC42026BB8400E69BEE /* Debug */,
+				DBDDAAC52026BB8400E69BEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DB48D33C2020293500A09429 /* Project object */;
+	rootObject = DBDDAAA92026BB8300E69BEE /* Project object */;
 }

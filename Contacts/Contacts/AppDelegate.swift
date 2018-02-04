@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  AlertPicker
+//  Contacts
 //
-//  Created by Weijie Lin on 1/29/18.
+//  Created by Weijie Lin on 2/3/18.
 //  Copyright © 2018 Weijie Lin. All rights reserved.
 //
 
@@ -16,11 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-        window?.rootViewController = ViewController()
-        
         return true
     }
 
