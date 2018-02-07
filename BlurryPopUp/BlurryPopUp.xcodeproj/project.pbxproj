@@ -12,6 +12,7 @@
 		DBE214D5202AB5D700398613 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE214D3202AB5D700398613 /* Main.storyboard */; };
 		DBE214D7202AB5D700398613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE214D6202AB5D700398613 /* Assets.xcassets */; };
 		DBE214DA202AB5D700398613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE214D8202AB5D700398613 /* LaunchScreen.storyboard */; };
+		DBE214E2202B87C400398613 /* BlurPopUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE214E1202B87C400398613 /* BlurPopUpController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DBE214D6202AB5D700398613 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBE214D9202AB5D700398613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBE214DB202AB5D700398613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBE214E1202B87C400398613 /* BlurPopUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurPopUpController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				DBE214CF202AB5D700398613 /* AppDelegate.swift */,
 				DBE214D1202AB5D700398613 /* ViewController.swift */,
+				DBE214E1202B87C400398613 /* BlurPopUpController.swift */,
 				DBE214D3202AB5D700398613 /* Main.storyboard */,
 				DBE214D6202AB5D700398613 /* Assets.xcassets */,
 				DBE214D8202AB5D700398613 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				DBE214D2202AB5D700398613 /* ViewController.swift in Sources */,
 				DBE214D0202AB5D700398613 /* AppDelegate.swift in Sources */,
+				DBE214E2202B87C400398613 /* BlurPopUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
