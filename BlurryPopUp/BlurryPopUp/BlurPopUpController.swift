@@ -8,7 +8,9 @@
 
 import UIKit
 
-class BlurPopUpController: UIViewController {
+class BlurPopUpController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    let pickerContent = (0...59).map { String($0) }
     
     let imageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "Ultron"))
@@ -27,22 +29,31 @@ class BlurPopUpController: UIViewController {
     }()
     
     lazy var addItemView: UIView = {
+        let view = UIView()
+        view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width * 2/3, height: 250)
+        view.backgroundColor = .white
+        view.alpha = 0.6
+        view.layer.cornerRadius = 5
+        let pickerView = UIPickerView()
+        pickerView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height - 35)
+        pickerView.dataSource = self
+        pickerView.delegate = self
+        pickerView.selectRow(30, inComponent: 0, animated: true)
         let doneButton = UIButton(type: .system)
         doneButton.setTitle("Done", for: .normal)
         doneButton.addTarget(self, action: #selector(handleDone), for: .touchUpInside)
         doneButton.frame = CGRect(x: 0, y: 0, width: 150, height: 100)
-        doneButton.backgroundColor = .yellow
+        doneButton.backgroundColor = .cyan
         doneButton.translatesAutoresizingMaskIntoConstraints = false
         doneButton.layer.cornerRadius = 5
-        let view = UIView()
-        view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width * 2/3, height: 250)
-        view.backgroundColor = .cyan
-        view.layer.cornerRadius = 5
         view.addSubview(doneButton)
-        doneButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
+        doneButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -4).isActive = true
         doneButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         doneButton.widthAnchor.constraint(equalToConstant: view.frame.width * 1/4).isActive = true
-        doneButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        doneButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        view.addSubview(pickerView)
+        pickerView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        pickerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         return view
     }()
     
@@ -60,6 +71,24 @@ class BlurPopUpController: UIViewController {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(handleAdd))
         view.addSubview(visualEffectView)
+        
+        viewWillLayoutSubviews()
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerContent.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerContent[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        navigationItem.title = pickerContent[row]
     }
     
     func animateIn() {
@@ -77,7 +106,7 @@ class BlurPopUpController: UIViewController {
     }
     
     func animateOut() {
-        UIView.animate(withDuration: 0.3, animations: {
+        UIView.animate(withDuration: 0.4, animations: {
             self.addItemView.transform = CGAffineTransform.init(scaleX: 0.1, y: 0.1)
             self.addItemView.alpha = 0
             self.visualEffectView.effect = nil
