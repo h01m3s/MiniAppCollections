@@ -11,12 +11,25 @@ import UIKit
 class ViewController: UITableViewController {
     
     let cellId = "cellId"
+    
+    // Should use Custom Delegation properly instead
+    func someMethod(cell: UITableViewCell) {
+        // which name is clicking on
+        guard let indexPathTapped = tableView.indexPath(for: cell) else { return }
+        
+        let contact = twoDimensionalArray[indexPathTapped.section].names[indexPathTapped.row]
+        print(contact)
+        let hasFavorited = contact.hasFavorited
+        twoDimensionalArray[indexPathTapped.section].names[indexPathTapped.row].hasFavorited = !hasFavorited
+        
+        cell.accessoryView?.tintColor = hasFavorited ? UIColor.lightGray : .red
+    }
 
     var twoDimensionalArray = [
-        ExpandableNames(isExpanded: true, names: ["Amy", "Bill", "Zack", "Steve", "Jack"]),
-        ExpandableNames(isExpanded: true, names: ["Carl", "Chris", "Christina", "Cameron"]),
-        ExpandableNames(isExpanded: true, names: ["David", "Dan"]),
-        ExpandableNames(isExpanded: true, names: ["Paker", "Patty"]),
+        ExpandableNames(isExpanded: true, names: ["Amy", "Bill", "Zack", "Steve", "Jack"].map { Contact(name: $0, hasFavorited: false) }),
+        ExpandableNames(isExpanded: true, names: ["Carl", "Chris", "Christina", "Cameron"].map { Contact(name: $0, hasFavorited: false) }),
+        ExpandableNames(isExpanded: true, names: ["David", "Dan"].map { Contact(name: $0, hasFavorited: false) }),
+        ExpandableNames(isExpanded: true, names: [Contact(name: "Parker", hasFavorited: false)]),
     ]
     
     var showIndexPaths = false
@@ -48,7 +61,7 @@ class ViewController: UITableViewController {
         navigationItem.title = "Contacts"
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+        tableView.register(ContactCell.self, forCellReuseIdentifier: cellId)
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -67,7 +80,6 @@ class ViewController: UITableViewController {
     }
     
     @objc func handleOpenClose(button: UIButton) {
-        print("Trying to expand and close section.")
         
         let section = button.tag
         
@@ -107,14 +119,16 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! ContactCell
+        cell.link = self
+        let contact = twoDimensionalArray[indexPath.section].names[indexPath.row]
         
-        let name = twoDimensionalArray[indexPath.section].names[indexPath.row]
+        cell.textLabel?.text = contact.name
         
-        cell.textLabel?.text = name
+        cell.accessoryView?.tintColor = contact.hasFavorited ? UIColor.red : UIColor.lightGray
         
         if showIndexPaths {
-            cell.textLabel?.text = "\(name) Section:\(indexPath.section) Row:\(indexPath.row)"
+            cell.textLabel?.text = "\(contact.name) Section:\(indexPath.section) Row:\(indexPath.row)"
         }
         
         return cell

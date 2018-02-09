@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBA67456202D519300B73544 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA67455202D519300B73544 /* ContactCell.swift */; };
 		DBDDAAB52026BB8400E69BEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDDAAB42026BB8400E69BEE /* AppDelegate.swift */; };
 		DBDDAAB72026BB8400E69BEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDDAAB62026BB8400E69BEE /* ViewController.swift */; };
 		DBDDAABC2026BB8400E69BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBDDAABB2026BB8400E69BEE /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DBA67455202D519300B73544 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		DBDDAAB12026BB8400E69BEE /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBDDAAB42026BB8400E69BEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBDDAAB62026BB8400E69BEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				DBDDAAB42026BB8400E69BEE /* AppDelegate.swift */,
 				DBDDAAB62026BB8400E69BEE /* ViewController.swift */,
+				DBA67455202D519300B73544 /* ContactCell.swift */,
 				DBE214C120294EB700398613 /* ExpandableNames.swift */,
 				DBDDAABB2026BB8400E69BEE /* Assets.xcassets */,
 				DBDDAABD2026BB8400E69BEE /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA67456202D519300B73544 /* ContactCell.swift in Sources */,
 				DBE214C220294EB700398613 /* ExpandableNames.swift in Sources */,
 				DBDDAAB72026BB8400E69BEE /* ViewController.swift in Sources */,
 				DBDDAAB52026BB8400E69BEE /* AppDelegate.swift in Sources */,
