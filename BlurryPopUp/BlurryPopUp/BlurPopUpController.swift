@@ -10,7 +10,8 @@ import UIKit
 
 class BlurPopUpController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
-    let pickerContent = (0...59).map { String($0) }
+    let PickerData = (0...59).map { String($0) }
+    let pickerDataSize = 120_000
     
     let imageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "Ultron"))
@@ -38,7 +39,7 @@ class BlurPopUpController: UIViewController, UIPickerViewDataSource, UIPickerVie
         pickerView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height - 35)
         pickerView.dataSource = self
         pickerView.delegate = self
-        pickerView.selectRow(30, inComponent: 0, animated: true)
+        pickerView.selectRow(pickerDataSize / 2, inComponent: 0, animated: false)
         let doneButton = UIButton(type: .system)
         doneButton.setTitle("Done", for: .normal)
         doneButton.addTarget(self, action: #selector(handleDone), for: .touchUpInside)
@@ -80,15 +81,20 @@ class BlurPopUpController: UIViewController, UIPickerViewDataSource, UIPickerVie
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerContent.count
+        return pickerDataSize
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerContent[row]
+        return PickerData[row % PickerData.count]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        navigationItem.title = pickerContent[row]
+        // Let PickerView go back to middle so user won't know
+        let position = pickerDataSize / 2 + row % PickerData.count
+        pickerView.selectRow(position, inComponent: 0, animated: false)
+        
+        // Get actual selected value
+        navigationItem.title = String(row % PickerData.count)
     }
     
     func animateIn() {
