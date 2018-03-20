@@ -12,6 +12,16 @@
 		DB83A20E20603DE30069D06F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB83A20C20603DE30069D06F /* Main.storyboard */; };
 		DB83A21020603DE30069D06F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB83A20F20603DE30069D06F /* Assets.xcassets */; };
 		DB83A21320603DE30069D06F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB83A21120603DE30069D06F /* LaunchScreen.storyboard */; };
+		DB83A21B206040040069D06F /* ServerData.json in Resources */ = {isa = PBXBuildFile; fileRef = DB83A21A206040040069D06F /* ServerData.json */; };
+		DB83A21D2060402B0069D06F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83A21C2060402B0069D06F /* Model.swift */; };
+		DB83A21F206041140069D06F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83A21E206041140069D06F /* ViewModel.swift */; };
+		DB83A22120604DD80069D06F /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83A22020604DD80069D06F /* BaseCell.swift */; };
+		DB83A223206050A10069D06F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83A222206050A10069D06F /* Extensions.swift */; };
+		DB83A225206053760069D06F /* NamePictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83A224206053760069D06F /* NamePictureCell.swift */; };
+		DB83A2282060B0D10069D06F /* AboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83A2272060B0D10069D06F /* AboutCell.swift */; };
+		DB83A22A2060B1860069D06F /* EmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83A2292060B1860069D06F /* EmailCell.swift */; };
+		DB83A22C2060B1E90069D06F /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83A22B2060B1E90069D06F /* FriendCell.swift */; };
+		DB83A22E2060B2310069D06F /* AttributeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83A22D2060B2310069D06F /* AttributeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		DB83A20F20603DE30069D06F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB83A21220603DE30069D06F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB83A21420603DE30069D06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB83A21A206040040069D06F /* ServerData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ServerData.json; sourceTree = "<group>"; };
+		DB83A21C2060402B0069D06F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DB83A21E206041140069D06F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		DB83A22020604DD80069D06F /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		DB83A222206050A10069D06F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DB83A224206053760069D06F /* NamePictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePictureCell.swift; sourceTree = "<group>"; };
+		DB83A2272060B0D10069D06F /* AboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCell.swift; sourceTree = "<group>"; };
+		DB83A2292060B1860069D06F /* EmailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCell.swift; sourceTree = "<group>"; };
+		DB83A22B2060B1E90069D06F /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		DB83A22D2060B2310069D06F /* AttributeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +74,32 @@
 		DB83A20720603DE30069D06F /* MultipleCellTypes */ = {
 			isa = PBXGroup;
 			children = (
+				DB83A226206053970069D06F /* Cells */,
 				DB83A20820603DE30069D06F /* AppDelegate.swift */,
 				DB83A20A20603DE30069D06F /* ViewController.swift */,
+				DB83A21C2060402B0069D06F /* Model.swift */,
+				DB83A21E206041140069D06F /* ViewModel.swift */,
+				DB83A222206050A10069D06F /* Extensions.swift */,
 				DB83A20C20603DE30069D06F /* Main.storyboard */,
 				DB83A20F20603DE30069D06F /* Assets.xcassets */,
 				DB83A21120603DE30069D06F /* LaunchScreen.storyboard */,
 				DB83A21420603DE30069D06F /* Info.plist */,
+				DB83A21A206040040069D06F /* ServerData.json */,
 			);
 			path = MultipleCellTypes;
+			sourceTree = "<group>";
+		};
+		DB83A226206053970069D06F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DB83A22020604DD80069D06F /* BaseCell.swift */,
+				DB83A224206053760069D06F /* NamePictureCell.swift */,
+				DB83A2272060B0D10069D06F /* AboutCell.swift */,
+				DB83A2292060B1860069D06F /* EmailCell.swift */,
+				DB83A22B2060B1E90069D06F /* FriendCell.swift */,
+				DB83A22D2060B2310069D06F /* AttributeCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB83A21B206040040069D06F /* ServerData.json in Resources */,
 				DB83A21320603DE30069D06F /* LaunchScreen.storyboard in Resources */,
 				DB83A21020603DE30069D06F /* Assets.xcassets in Resources */,
 				DB83A20E20603DE30069D06F /* Main.storyboard in Resources */,
@@ -136,8 +175,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB83A21D2060402B0069D06F /* Model.swift in Sources */,
+				DB83A223206050A10069D06F /* Extensions.swift in Sources */,
+				DB83A22E2060B2310069D06F /* AttributeCell.swift in Sources */,
 				DB83A20B20603DE30069D06F /* ViewController.swift in Sources */,
+				DB83A21F206041140069D06F /* ViewModel.swift in Sources */,
+				DB83A22120604DD80069D06F /* BaseCell.swift in Sources */,
+				DB83A2282060B0D10069D06F /* AboutCell.swift in Sources */,
 				DB83A20920603DE30069D06F /* AppDelegate.swift in Sources */,
+				DB83A22A2060B1860069D06F /* EmailCell.swift in Sources */,
+				DB83A225206053760069D06F /* NamePictureCell.swift in Sources */,
+				DB83A22C2060B1E90069D06F /* FriendCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
