@@ -7,23 +7,49 @@
 //
 
 #import "ViewController.h"
+#import "Course.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic) NSMutableArray<Course *> *courses;
 
 @end
 
 @implementation ViewController
 
+NSString *cellId = @"cellId";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self setupCourses];
+    
+    self.navigationItem.title = @"Courses";
+    self.navigationController.navigationBar.prefersLargeTitles = YES;
+    
+    [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:cellId];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupCourses {
+    self.courses = NSMutableArray.new;
+    
+    Course *course = Course.new;
+    course.name = @"Instagram Firebase";
+    course.numberOfLessons = @(49);
+    //    Course *course = [[Course alloc] init];
+    [self.courses addObject:course];
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.courses.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+    
+    Course *course = self.courses[indexPath.row];
+    cell.textLabel.text = course.name;
+    return cell;
+}
 
 @end

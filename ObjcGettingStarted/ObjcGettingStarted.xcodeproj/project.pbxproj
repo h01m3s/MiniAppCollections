@@ -13,6 +13,7 @@
 		DB0063E1207C54D600689F59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB0063E0207C54D600689F59 /* Assets.xcassets */; };
 		DB0063E4207C54D600689F59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB0063E2207C54D600689F59 /* LaunchScreen.storyboard */; };
 		DB0063E7207C54D600689F59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0063E6207C54D600689F59 /* main.m */; };
+		DB0063EF207C57E400689F59 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0063EE207C57E400689F59 /* Course.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		DB0063E3207C54D600689F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB0063E5207C54D600689F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB0063E6207C54D600689F59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB0063ED207C57E400689F59 /* Course.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		DB0063EE207C57E400689F59 /* Course.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				DB0063D8207C54D600689F59 /* AppDelegate.m */,
 				DB0063DA207C54D600689F59 /* ViewController.h */,
 				DB0063DB207C54D600689F59 /* ViewController.m */,
+				DB0063ED207C57E400689F59 /* Course.h */,
+				DB0063EE207C57E400689F59 /* Course.m */,
 				DB0063DD207C54D600689F59 /* Main.storyboard */,
 				DB0063E0207C54D600689F59 /* Assets.xcassets */,
 				DB0063E2207C54D600689F59 /* LaunchScreen.storyboard */,
@@ -141,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB0063EF207C57E400689F59 /* Course.m in Sources */,
 				DB0063DC207C54D600689F59 /* ViewController.m in Sources */,
 				DB0063E7207C54D600689F59 /* main.m in Sources */,
 				DB0063D9207C54D600689F59 /* AppDelegate.m in Sources */,

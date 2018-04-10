@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  Course.m
 //  ObjcGettingStarted
 //
 //  Created by Weijie Lin on 4/9/18.
 //  Copyright © 2018 Weijie Lin. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "Course.h"
 
-@interface ViewController : UITableViewController
-
+@implementation Course
 
 @end
-
