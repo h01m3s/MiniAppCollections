@@ -11,6 +11,7 @@ import Foundation
 class ToDoStore {
     
     enum ChangeBehavior {
+        // Associated Data ([Int])
         case add([Int])
         case remove([Int])
         case reload
