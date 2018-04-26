@@ -35,7 +35,7 @@ class ToDoStore {
             return .reload
         }
     }
-
+    
     private var items: [ToDoItem] = [] {
         didSet {
             let behavior = ToDoStore.diff(original: oldValue, now: items)
