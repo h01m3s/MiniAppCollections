@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         darkTextLabel.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 400)
         darkTextLabel.textAlignment = .center
         
+        view.addSubview(darkTextLabel)
+        
         let shinyTextLabel = UILabel()
         shinyTextLabel.text = "Shimmer"
         shinyTextLabel.textColor = .white
