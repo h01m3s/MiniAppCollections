@@ -28,9 +28,9 @@ class ViewController: UIViewController {
             textView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             textView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             textView.heightAnchor.constraint(equalToConstant: 50)
-            ].forEach {
+        ].forEach {
                 $0.isActive = true
-            }
+        }
         
         textView.font = UIFont.preferredFont(forTextStyle: .headline)
         textView.delegate = self
