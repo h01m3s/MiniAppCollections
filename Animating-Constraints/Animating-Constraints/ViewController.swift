@@ -39,12 +39,44 @@ class ViewController: UIViewController {
         startButtonCenterYConstraint.constant = view.center.x
         UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 4, options: .curveEaseOut, animations: {
             self.view.layoutIfNeeded()
+        }, completion: { (complete) in
+            if complete {
+                self.animateLogoTop()
+            }
+        })
+    }
+    
+    func animateLogoTop() {
+        logoTopConstraint.constant = 50
+        UIView.animate(withDuration: 0.4) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    func shrinkAnimateButton() {
+        animateButtonWidthConstraint.constant = 100
+        UIView.animate(withDuration: 0.4, delay: 0.4, usingSpringWithDamping: 0.6, initialSpringVelocity: 4, options: .curveEaseOut, animations: {
+            self.view.layoutIfNeeded()
+        }, completion: { (complete) in
+            if complete {
+                self.restoreDefaultUI()
+            }
+        })
+    }
+    
+    func restoreDefaultUI() {
+        startButtonCenterYConstraint = startButton.centerXAnchor.constraint(equalTo: view.leadingAnchor, constant: -300)
+        logoTopConstraint.constant = 200
+        animateButtonWidthConstraint.constant = 300
+        UIView.animate(withDuration: 0.4, delay: 2, usingSpringWithDamping: 0.6, initialSpringVelocity: 4, options: .curveEaseOut, animations: {
+            self.view.layoutIfNeeded()
         }, completion: nil)
     }
     
     @IBAction func animateButtonTapped(_ sender: UIButton) {
         print("Animate")
         animateStartButtonCenter()
+        shrinkAnimateButton()
     }
     
 
