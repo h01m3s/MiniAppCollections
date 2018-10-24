@@ -10,6 +10,8 @@
 		DB3D17512176EEBB001426E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D17502176EEBB001426E8 /* AppDelegate.swift */; };
 		DB3D17582176EEBC001426E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB3D17572176EEBC001426E8 /* Assets.xcassets */; };
 		DB3D175B2176EEBC001426E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB3D17592176EEBC001426E8 /* LaunchScreen.storyboard */; };
+		DB3D176521801876001426E8 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D176421801876001426E8 /* TripModel.swift */; };
+		DB3D176721801881001426E8 /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D176621801881001426E8 /* TripFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		DB3D17572176EEBC001426E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB3D175A2176EEBC001426E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB3D175C2176EEBC001426E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB3D176421801876001426E8 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		DB3D176621801881001426E8 /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +54,30 @@
 		DB3D174F2176EEBB001426E8 /* Itinerary */ = {
 			isa = PBXGroup;
 			children = (
+				DB3D17622180184C001426E8 /* Model */,
 				DB3D17502176EEBB001426E8 /* AppDelegate.swift */,
 				DB3D17572176EEBC001426E8 /* Assets.xcassets */,
 				DB3D17592176EEBC001426E8 /* LaunchScreen.storyboard */,
 				DB3D175C2176EEBC001426E8 /* Info.plist */,
 			);
 			path = Itinerary;
+			sourceTree = "<group>";
+		};
+		DB3D17622180184C001426E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D176321801856001426E8 /* Trip */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB3D176321801856001426E8 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				DB3D176421801876001426E8 /* TripModel.swift */,
+				DB3D176621801881001426E8 /* TripFunctions.swift */,
+			);
+			path = Trip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB3D176521801876001426E8 /* TripModel.swift in Sources */,
 				DB3D17512176EEBB001426E8 /* AppDelegate.swift in Sources */,
+				DB3D176721801881001426E8 /* TripFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
