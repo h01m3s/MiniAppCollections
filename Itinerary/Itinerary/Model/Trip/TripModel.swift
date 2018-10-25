@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+class TripModel {
+    
+    var id: String!
+    var title: String!
+    
+}
