@@ -12,6 +12,7 @@
 		DB3D175B2176EEBC001426E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB3D17592176EEBC001426E8 /* LaunchScreen.storyboard */; };
 		DB3D176521801876001426E8 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D176421801876001426E8 /* TripModel.swift */; };
 		DB3D176721801881001426E8 /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D176621801881001426E8 /* TripFunctions.swift */; };
+		DB3D17692187E0D8001426E8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D17682187E0D8001426E8 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DB3D175C2176EEBC001426E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB3D176421801876001426E8 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		DB3D176621801881001426E8 /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
+		DB3D17682187E0D8001426E8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		DB3D17622180184C001426E8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DB3D17682187E0D8001426E8 /* Data.swift */,
 				DB3D176321801856001426E8 /* Trip */,
 			);
 			path = Model;
@@ -153,6 +156,7 @@
 				DB3D176521801876001426E8 /* TripModel.swift in Sources */,
 				DB3D17512176EEBB001426E8 /* AppDelegate.swift in Sources */,
 				DB3D176721801881001426E8 /* TripFunctions.swift in Sources */,
+				DB3D17692187E0D8001426E8 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
