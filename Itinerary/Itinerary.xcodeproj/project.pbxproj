@@ -16,6 +16,7 @@
 		DBD8D717218951110085231E /* TripsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD8D716218951110085231E /* TripsViewController.storyboard */; };
 		DBD8D71B218951520085231E /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8D71A218951520085231E /* TripsViewController.swift */; };
 		DBD8D71D21895C440085231E /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8D71C21895C440085231E /* TripsTableViewCell.swift */; };
+		DBD8D72021896A9F0085231E /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8D71F21896A9F0085231E /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DBD8D716218951110085231E /* TripsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripsViewController.storyboard; sourceTree = "<group>"; };
 		DBD8D71A218951520085231E /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		DBD8D71C21895C440085231E /* TripsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
+		DBD8D71F21896A9F0085231E /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		DB3D174F2176EEBB001426E8 /* Itinerary */ = {
 			isa = PBXGroup;
 			children = (
+				DBD8D71E21896A7F0085231E /* Extensions */,
 				DB3D17622180184C001426E8 /* Model */,
 				DBD8D714218950300085231E /* Views */,
 				DB3D17502176EEBB001426E8 /* AppDelegate.swift */,
@@ -106,6 +109,14 @@
 				DBD8D71C21895C440085231E /* TripsTableViewCell.swift */,
 			);
 			path = TripsViewController;
+			sourceTree = "<group>";
+		};
+		DBD8D71E21896A7F0085231E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DBD8D71F21896A9F0085231E /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBD8D71D21895C440085231E /* TripsTableViewCell.swift in Sources */,
+				DBD8D72021896A9F0085231E /* UIViewExtensions.swift in Sources */,
 				DB3D176521801876001426E8 /* TripModel.swift in Sources */,
 				DB3D17512176EEBB001426E8 /* AppDelegate.swift in Sources */,
 				DB3D176721801881001426E8 /* TripFunctions.swift in Sources */,
