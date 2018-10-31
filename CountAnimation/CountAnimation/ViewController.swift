@@ -9,17 +9,35 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let countingLabel: UILabel = {
+        let label = UILabel()
+        label.text = "1234"
+        label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 18)
+        return label
+    }()
+    
+    var startValue = 0
+    let endValue = 999
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        view.addSubview(countingLabel)
+        countingLabel.frame = view.frame
+        
+        // Create CADisplayLink
+        let displayLink = CADisplayLink(target: self, selector: #selector(handleUpdate))
+        displayLink.add(to: .main, forMode: RunLoop.Mode.default)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @objc func handleUpdate() {
+        if startValue <= endValue {
+            self.countingLabel.text = "\(startValue)"
+            startValue += 1
+        }
     }
-
-
+    
 }
 
