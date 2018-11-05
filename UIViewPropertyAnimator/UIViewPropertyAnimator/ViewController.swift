@@ -12,7 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "bp"))
+        imageView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+        imageView.center = view.center
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        view.addSubview(imageView)
     }
 
 
