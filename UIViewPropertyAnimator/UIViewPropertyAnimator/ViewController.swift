@@ -14,13 +14,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let imageView = UIImageView(image: #imageLiteral(resourceName: "bp"))
-        imageView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
-        imageView.center = view.center
+        view.addSubview(imageView)
+//        imageView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+//        imageView.center = view.center
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
-        view.addSubview(imageView)
+        
+        imageView.centerInSuperview(size: .init(width: 200, height: 200))
     }
-
 
 }
 
