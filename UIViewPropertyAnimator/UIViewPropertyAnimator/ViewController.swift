@@ -13,15 +13,32 @@ class ViewController: UIViewController {
     let imageView = UIImageView(image: #imageLiteral(resourceName: "bp"))
     let visualEffectView = UIVisualEffectView(effect: nil)
     
+    let animator = UIViewPropertyAnimator(duration: 0.5, curve: .linear)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupVisualEffectView()
         setupCenteredImageView()
+        setupVisualBlurEffectView()
         setupSlider()
+        
+        animator.addAnimations {
+            // completed animation state
+            self.imageView.transform = CGAffineTransform(scaleX: 2, y: 2)
+            self.visualEffectView.effect = UIBlurEffect(style: .regular)
+        }
+        
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
     }
     
-    fileprivate func setupVisualEffectView() {
+    @objc func handleTap() {
+        print("Tapped View")
+        UIView.animate(withDuration: 1.0) {
+            self.imageView.transform = CGAffineTransform(scaleX: 2, y: 2)
+        }
+    }
+    
+    fileprivate func setupVisualBlurEffectView() {
         view.addSubview(visualEffectView)
         visualEffectView.fillSuperview()
     }
@@ -30,6 +47,12 @@ class ViewController: UIViewController {
         let slider = UISlider()
         view.addSubview(slider)
         slider.anchor(top: imageView.bottomAnchor, leading: imageView.leadingAnchor, bottom: nil, trailing: imageView.trailingAnchor)
+        slider.addTarget(self, action: #selector(handleSliderChange), for: .valueChanged)
+    }
+    
+    @objc func handleSliderChange(slider: UISlider) {
+        print(slider.value)
+        animator.fractionComplete = CGFloat(slider.value)
     }
     
     fileprivate func setupCenteredImageView() {
