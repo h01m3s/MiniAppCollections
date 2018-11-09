@@ -28,14 +28,6 @@ class ViewController: UIViewController {
             self.visualEffectView.effect = UIBlurEffect(style: .regular)
         }
         
-        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
-    }
-    
-    @objc func handleTap() {
-        print("Tapped View")
-        UIView.animate(withDuration: 1.0) {
-            self.imageView.transform = CGAffineTransform(scaleX: 2, y: 2)
-        }
     }
     
     fileprivate func setupVisualBlurEffectView() {
