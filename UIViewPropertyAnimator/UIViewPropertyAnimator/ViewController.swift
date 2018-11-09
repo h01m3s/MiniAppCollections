@@ -11,12 +11,19 @@ import UIKit
 class ViewController: UIViewController {
     
     let imageView = UIImageView(image: #imageLiteral(resourceName: "bp"))
+    let visualEffectView = UIVisualEffectView(effect: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupVisualEffectView()
         setupCenteredImageView()
         setupSlider()
+    }
+    
+    fileprivate func setupVisualEffectView() {
+        view.addSubview(visualEffectView)
+        visualEffectView.fillSuperview()
     }
     
     fileprivate func setupSlider() {
