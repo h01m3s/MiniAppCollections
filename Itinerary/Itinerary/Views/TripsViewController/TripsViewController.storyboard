@@ -22,9 +22,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lN8-kx-VvL">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lN8-kx-VvL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="160" id="CGc-Rm-Cwq" customClass="TripsTableViewCell" customModule="Itinerary" customModuleProvider="target">
@@ -34,9 +33,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ITc-Lg-t5g">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITc-Lg-t5g">
                                                     <rect key="frame" x="15" y="7" width="345" height="145"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbV-C7-UW9">
                                                             <rect key="frame" x="8" y="8" width="329" height="129"/>
@@ -48,6 +46,12 @@
                                                     </subviews>
                                                 </view>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ITc-Lg-t5g" firstAttribute="leading" secondItem="saM-IS-9Bg" secondAttribute="leading" constant="15" id="5Mb-ay-McE"/>
+                                                <constraint firstItem="ITc-Lg-t5g" firstAttribute="top" secondItem="saM-IS-9Bg" secondAttribute="top" constant="7" id="Csu-EB-4F6"/>
+                                                <constraint firstAttribute="trailing" secondItem="ITc-Lg-t5g" secondAttribute="trailing" constant="15" id="PZU-Xh-X56"/>
+                                                <constraint firstAttribute="bottom" secondItem="ITc-Lg-t5g" secondAttribute="bottom" constant="7.5" id="iNE-20-a4Y"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
@@ -59,6 +63,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lN8-kx-VvL" firstAttribute="bottom" secondItem="g58-Bu-HAh" secondAttribute="bottom" id="2xQ-Aj-GDo"/>
+                            <constraint firstItem="lN8-kx-VvL" firstAttribute="top" secondItem="gIJ-Td-0eA" secondAttribute="top" id="OSU-bs-ogY"/>
+                            <constraint firstItem="lN8-kx-VvL" firstAttribute="trailing" secondItem="g58-Bu-HAh" secondAttribute="trailing" id="lox-6g-LNl"/>
+                            <constraint firstItem="lN8-kx-VvL" firstAttribute="leading" secondItem="g58-Bu-HAh" secondAttribute="leading" id="nP0-hi-4ej"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="g58-Bu-HAh"/>
                     </view>
                     <connections>
