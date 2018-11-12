@@ -19,6 +19,7 @@
 		DBD8D72021896A9F0085231E /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8D71F21896A9F0085231E /* UIViewExtensions.swift */; };
 		DBD8D723218AC61C0085231E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8D722218AC61C0085231E /* Theme.swift */; };
 		DBD8D725218ACF1F0085231E /* FugazOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBD8D724218ACF1F0085231E /* FugazOne-Regular.ttf */; };
+		DBD8D7472199114F0085231E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD8D7462199114F0085231E /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		DBD8D71F21896A9F0085231E /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		DBD8D722218AC61C0085231E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		DBD8D724218ACF1F0085231E /* FugazOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FugazOne-Regular.ttf"; sourceTree = "<group>"; };
+		DBD8D7462199114F0085231E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				DBD8D722218AC61C0085231E /* Theme.swift */,
 				DBD8D724218ACF1F0085231E /* FugazOne-Regular.ttf */,
+				DBD8D7462199114F0085231E /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD8D7472199114F0085231E /* Colors.xcassets in Resources */,
 				DB3D175B2176EEBC001426E8 /* LaunchScreen.storyboard in Resources */,
 				DBD8D717218951110085231E /* TripsViewController.storyboard in Resources */,
 				DBD8D725218ACF1F0085231E /* FugazOne-Regular.ttf in Resources */,
