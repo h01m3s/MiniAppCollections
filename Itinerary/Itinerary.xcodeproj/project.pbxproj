@@ -13,6 +13,7 @@
 		DB3D176521801876001426E8 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D176421801876001426E8 /* TripModel.swift */; };
 		DB3D176721801881001426E8 /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D176621801881001426E8 /* TripFunctions.swift */; };
 		DB3D17692187E0D8001426E8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D17682187E0D8001426E8 /* Data.swift */; };
+		DB68634E21993EF700E970CA /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68634D21993EF700E970CA /* UIButtonExtension.swift */; };
 		DBD8D717218951110085231E /* TripsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD8D716218951110085231E /* TripsViewController.storyboard */; };
 		DBD8D71B218951520085231E /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8D71A218951520085231E /* TripsViewController.swift */; };
 		DBD8D71D21895C440085231E /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD8D71C21895C440085231E /* TripsTableViewCell.swift */; };
@@ -31,6 +32,7 @@
 		DB3D176421801876001426E8 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		DB3D176621801881001426E8 /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
 		DB3D17682187E0D8001426E8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		DB68634D21993EF700E970CA /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		DBD8D716218951110085231E /* TripsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripsViewController.storyboard; sourceTree = "<group>"; };
 		DBD8D71A218951520085231E /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		DBD8D71C21895C440085231E /* TripsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				DBD8D71F21896A9F0085231E /* UIViewExtensions.swift */,
+				DB68634D21993EF700E970CA /* UIButtonExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				DBD8D72021896A9F0085231E /* UIViewExtensions.swift in Sources */,
 				DB3D176521801876001426E8 /* TripModel.swift in Sources */,
 				DB3D17512176EEBB001426E8 /* AppDelegate.swift in Sources */,
+				DB68634E21993EF700E970CA /* UIButtonExtension.swift in Sources */,
 				DB3D176721801881001426E8 /* TripFunctions.swift in Sources */,
 				DB3D17692187E0D8001426E8 /* Data.swift in Sources */,
 				DBD8D71B218951520085231E /* TripsViewController.swift in Sources */,

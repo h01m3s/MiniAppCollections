@@ -38,7 +38,7 @@
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbV-C7-UW9">
                                                             <rect key="frame" x="8" y="8" width="329" height="129"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
                                                             <fontDescription key="fontDescription" name="FugazOne-Regular" family="Fugaz One" pointSize="32"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -61,17 +61,29 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocn-D7-3I5">
+                                <rect key="frame" x="299" y="581" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Igj-ch-wMK"/>
+                                    <constraint firstAttribute="width" constant="56" id="fCa-A8-F9o"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="plus"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lN8-kx-VvL" firstAttribute="bottom" secondItem="g58-Bu-HAh" secondAttribute="bottom" id="2xQ-Aj-GDo"/>
+                            <constraint firstItem="g58-Bu-HAh" firstAttribute="trailing" secondItem="ocn-D7-3I5" secondAttribute="trailing" constant="20" id="CGE-GV-Wg2"/>
                             <constraint firstItem="lN8-kx-VvL" firstAttribute="top" secondItem="gIJ-Td-0eA" secondAttribute="top" id="OSU-bs-ogY"/>
+                            <constraint firstItem="g58-Bu-HAh" firstAttribute="bottom" secondItem="ocn-D7-3I5" secondAttribute="bottom" constant="30" id="iyz-f4-pPq"/>
                             <constraint firstItem="lN8-kx-VvL" firstAttribute="trailing" secondItem="g58-Bu-HAh" secondAttribute="trailing" id="lox-6g-LNl"/>
                             <constraint firstItem="lN8-kx-VvL" firstAttribute="leading" secondItem="g58-Bu-HAh" secondAttribute="leading" id="nP0-hi-4ej"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g58-Bu-HAh"/>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="ocn-D7-3I5" id="5OH-Mt-6P6"/>
                         <outlet property="tableView" destination="lN8-kx-VvL" id="l25-k7-Lq6"/>
                     </connections>
                 </viewController>
@@ -80,4 +92,7 @@
             <point key="canvasLocation" x="84" y="25.637181409295355"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus" width="18" height="18"/>
+    </resources>
 </document>
