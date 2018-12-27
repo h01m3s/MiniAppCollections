@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		DB1676C221D0866C007D5A15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1676C121D0866C007D5A15 /* AppDelegate.swift */; };
-		DB1676C421D0866C007D5A15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1676C321D0866C007D5A15 /* ViewController.swift */; };
 		DB1676C721D0866C007D5A15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1676C521D0866C007D5A15 /* Main.storyboard */; };
 		DB1676C921D0866D007D5A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1676C821D0866D007D5A15 /* Assets.xcassets */; };
 		DB1676CC21D0866D007D5A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1676CA21D0866D007D5A15 /* LaunchScreen.storyboard */; };
+		DB1676D421D095E9007D5A15 /* StretchyHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1676D321D095E9007D5A15 /* StretchyHeaderController.swift */; };
+		DB1676D621D097FB007D5A15 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1676D521D097FB007D5A15 /* HeaderView.swift */; };
+		DB1676D821D09AF0007D5A15 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1676D721D09AF0007D5A15 /* Extensions+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DB1676BE21D0866C007D5A15 /* StretchyHeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StretchyHeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1676C121D0866C007D5A15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB1676C321D0866C007D5A15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB1676C621D0866C007D5A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB1676C821D0866D007D5A15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB1676CB21D0866D007D5A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB1676CD21D0866D007D5A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB1676D321D095E9007D5A15 /* StretchyHeaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderController.swift; sourceTree = "<group>"; };
+		DB1676D521D097FB007D5A15 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		DB1676D721D09AF0007D5A15 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				DB1676C121D0866C007D5A15 /* AppDelegate.swift */,
-				DB1676C321D0866C007D5A15 /* ViewController.swift */,
 				DB1676C521D0866C007D5A15 /* Main.storyboard */,
 				DB1676C821D0866D007D5A15 /* Assets.xcassets */,
 				DB1676CA21D0866D007D5A15 /* LaunchScreen.storyboard */,
 				DB1676CD21D0866D007D5A15 /* Info.plist */,
+				DB1676D321D095E9007D5A15 /* StretchyHeaderController.swift */,
+				DB1676D521D097FB007D5A15 /* HeaderView.swift */,
+				DB1676D721D09AF0007D5A15 /* Extensions+UIView.swift */,
 			);
 			path = StretchyHeader;
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB1676C421D0866C007D5A15 /* ViewController.swift in Sources */,
+				DB1676D421D095E9007D5A15 /* StretchyHeaderController.swift in Sources */,
 				DB1676C221D0866C007D5A15 /* AppDelegate.swift in Sources */,
+				DB1676D621D097FB007D5A15 /* HeaderView.swift in Sources */,
+				DB1676D821D09AF0007D5A15 /* Extensions+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
