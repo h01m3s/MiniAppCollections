@@ -14,6 +14,7 @@
 		DB1676D421D095E9007D5A15 /* StretchyHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1676D321D095E9007D5A15 /* StretchyHeaderController.swift */; };
 		DB1676D621D097FB007D5A15 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1676D521D097FB007D5A15 /* HeaderView.swift */; };
 		DB1676D821D09AF0007D5A15 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1676D721D09AF0007D5A15 /* Extensions+UIView.swift */; };
+		DBBD356B21D5DF350048A5BD /* StretchyHeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD356A21D5DF350048A5BD /* StretchyHeaderLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DB1676D321D095E9007D5A15 /* StretchyHeaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderController.swift; sourceTree = "<group>"; };
 		DB1676D521D097FB007D5A15 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		DB1676D721D09AF0007D5A15 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		DBBD356A21D5DF350048A5BD /* StretchyHeaderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				DB1676C121D0866C007D5A15 /* AppDelegate.swift */,
+				DBBD356921D5DF0C0048A5BD /* Custom */,
 				DB1676C521D0866C007D5A15 /* Main.storyboard */,
 				DB1676C821D0866D007D5A15 /* Assets.xcassets */,
 				DB1676CA21D0866D007D5A15 /* LaunchScreen.storyboard */,
@@ -68,6 +71,14 @@
 				DB1676D721D09AF0007D5A15 /* Extensions+UIView.swift */,
 			);
 			path = StretchyHeader;
+			sourceTree = "<group>";
+		};
+		DBBD356921D5DF0C0048A5BD /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				DBBD356A21D5DF350048A5BD /* StretchyHeaderLayout.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +155,7 @@
 				DB1676D421D095E9007D5A15 /* StretchyHeaderController.swift in Sources */,
 				DB1676C221D0866C007D5A15 /* AppDelegate.swift in Sources */,
 				DB1676D621D097FB007D5A15 /* HeaderView.swift in Sources */,
+				DBBD356B21D5DF350048A5BD /* StretchyHeaderLayout.swift in Sources */,
 				DB1676D821D09AF0007D5A15 /* Extensions+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
