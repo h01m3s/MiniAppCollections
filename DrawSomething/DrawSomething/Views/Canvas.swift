@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
+//  Canvas.swift
 //  DrawSomething
 //
-//  Created by Weijie Lin on 1/6/19.
+//  Created by Weijie Lin on 1/7/19.
 //  Copyright © 2019 Weijie Lin. All rights reserved.
 //
 
@@ -17,13 +17,6 @@ class Canvas: UIView {
         guard let context = UIGraphicsGetCurrentContext() else { return }
         
         // lines setup
-        // dummy data
-//        let startPoint = CGPoint(x: 0, y: 0)
-//        let endPoint = CGPoint(x: 100, y: 100)
-//        context.move(to: startPoint)
-//        context.addLine(to: endPoint)
-//        context.strokePath()
-        
         context.setStrokeColor(UIColor.red.cgColor)
         context.setLineWidth(10)
         context.setLineCap(.butt)
@@ -42,7 +35,7 @@ class Canvas: UIView {
     }
     
     // ditch this line
-//    var line = [CGPoint]()
+    //    var line = [CGPoint]()
     
     var lines = [[CGPoint]]()
     
@@ -62,19 +55,3 @@ class Canvas: UIView {
     }
     
 }
-
-class ViewController: UIViewController {
-
-    let canvas = Canvas()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.addSubview(canvas)
-        canvas.backgroundColor = .white
-        canvas.frame = view.frame
-    }
-
-
-}
-
