@@ -35,8 +35,6 @@ class Canvas: UIView {
     }
     
     // ditch this line
-    //    var line = [CGPoint]()
-    
     var lines = [[CGPoint]]()
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
