@@ -16,15 +16,27 @@ class ViewController: UIViewController {
         let button = UIButton(type: .system)
         button.setTitle("Undo", for: .normal)
         button.titleLabel?.font = .boldSystemFont(ofSize: 14)
+        button.addTarget(self, action: #selector(handleUndo), for: .touchUpInside)
         return button
     }()
+    
+    @objc fileprivate func handleUndo() {
+        print("Undo lines drawn")
+        canvas.undo()
+    }
     
     let clearButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Clear", for: .normal)
         button.titleLabel?.font = .boldSystemFont(ofSize: 14)
+        button.addTarget(self, action: #selector(handleClear), for: .touchUpInside)
         return button
     }()
+    
+    @objc fileprivate func handleClear() {
+        print("clear canvas")
+        canvas.clear()
+    }
     
     override func loadView() {
         // set default view to Canvas View
