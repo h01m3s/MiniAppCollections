@@ -12,6 +12,7 @@
 		DBF2084A2241F5B200892986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF208482241F5B200892986 /* Main.storyboard */; };
 		DBF2084C2241F5B600892986 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF2084B2241F5B600892986 /* Assets.xcassets */; };
 		DBF2084F2241F5B600892986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF2084D2241F5B600892986 /* LaunchScreen.storyboard */; };
+		DBF208572241F8CB00892986 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF208562241F8CB00892986 /* UIView+Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DBF2084B2241F5B600892986 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBF2084E2241F5B600892986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBF208502241F5B600892986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBF208562241F8CB00892986 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				DBF208442241F5B200892986 /* AppDelegate.swift */,
 				DBF208462241F5B200892986 /* ViewController.swift */,
+				DBF208562241F8CB00892986 /* UIView+Layout.swift */,
 				DBF208482241F5B200892986 /* Main.storyboard */,
 				DBF2084B2241F5B600892986 /* Assets.xcassets */,
 				DBF2084D2241F5B600892986 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				DBF208472241F5B200892986 /* ViewController.swift in Sources */,
 				DBF208452241F5B200892986 /* AppDelegate.swift in Sources */,
+				DBF208572241F8CB00892986 /* UIView+Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
