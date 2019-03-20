@@ -95,6 +95,7 @@ class ViewController: UIViewController {
         
         let colorsStackView = UIStackView(arrangedSubviews: [yellowButton, redButton, blueButton])
         colorsStackView.distribution = .fillEqually
+        colorsStackView.spacing = 0.3
         
         let stackView = UIStackView(arrangedSubviews: [
             undoButton,
