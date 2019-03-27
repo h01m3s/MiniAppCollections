@@ -8,20 +8,19 @@
 
 import UIKit
 
-class KeyCell: UICollectionViewCell {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        backgroundColor = .red
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-
 class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     fileprivate let cellId = "cellId"
+    
+    let numbers = [
+        "1", "2", "3", "4", "5", "6", "7", "8", "9", "*", "0", "#"
+    ]
+    
+    // hack solution
+    let lettering = [
+        "", "A B C", "D E F", "G H I", "J K L", "M N O", "P Q R S", "T U V",
+        "W X Y Z", "", "+", ""
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +31,13 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 7
+        return numbers.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! KeyCell
+        cell.digitsLabel.text = numbers[indexPath.item]
+        cell.lettersLabel.text = lettering[indexPath.item]
         return cell
     }
     
@@ -48,6 +49,10 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         let cellWidth = (view.frame.width - 2 * leftRightPadding - 2 * interSpacing) / 3
         
         return .init(width: cellWidth, height: cellWidth)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 16
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
