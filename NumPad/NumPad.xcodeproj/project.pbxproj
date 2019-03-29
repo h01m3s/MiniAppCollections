@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DB3600FB224B324200C98E4D /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3600FA224B324200C98E4D /* KeyCell.swift */; };
 		DB3600FD224B32F500C98E4D /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3600FC224B32F500C98E4D /* UIView+Layout.swift */; };
+		DBE0A33E224DC4DE0034D2E0 /* DialedNumbersHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE0A33D224DC4DE0034D2E0 /* DialedNumbersHeader.swift */; };
 		DBF208652249D88800892986 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF208642249D88800892986 /* AppDelegate.swift */; };
 		DBF208672249D88800892986 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF208662249D88800892986 /* ViewController.swift */; };
 		DBF2086A2249D88800892986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF208682249D88800892986 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		DB3600FA224B324200C98E4D /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
 		DB3600FC224B32F500C98E4D /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		DBE0A33D224DC4DE0034D2E0 /* DialedNumbersHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialedNumbersHeader.swift; sourceTree = "<group>"; };
 		DBF208612249D88800892986 /* NumPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF208642249D88800892986 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBF208662249D88800892986 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				DBF208642249D88800892986 /* AppDelegate.swift */,
 				DBF208662249D88800892986 /* ViewController.swift */,
+				DBE0A33D224DC4DE0034D2E0 /* DialedNumbersHeader.swift */,
 				DB3600FA224B324200C98E4D /* KeyCell.swift */,
 				DB3600FC224B32F500C98E4D /* UIView+Layout.swift */,
 				DBF208682249D88800892986 /* Main.storyboard */,
@@ -102,6 +105,7 @@
 				TargetAttributes = {
 					DBF208602249D88800892986 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -141,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE0A33E224DC4DE0034D2E0 /* DialedNumbersHeader.swift in Sources */,
 				DB3600FD224B32F500C98E4D /* UIView+Layout.swift in Sources */,
 				DB3600FB224B324200C98E4D /* KeyCell.swift in Sources */,
 				DBF208672249D88800892986 /* ViewController.swift in Sources */,
@@ -299,7 +304,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.weijielin.NumPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -317,7 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.weijielin.NumPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
