@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB063E70224DCE3900C1D761 /* GreenCallButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB063E6F224DCE3900C1D761 /* GreenCallButtonCell.swift */; };
+		DB063E72224F290000C1D761 /* BackspaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB063E71224F290000C1D761 /* BackspaceCell.swift */; };
 		DB3600FB224B324200C98E4D /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3600FA224B324200C98E4D /* KeyCell.swift */; };
 		DB3600FD224B32F500C98E4D /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3600FC224B32F500C98E4D /* UIView+Layout.swift */; };
 		DBE0A33E224DC4DE0034D2E0 /* DialedNumbersHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE0A33D224DC4DE0034D2E0 /* DialedNumbersHeader.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB063E6F224DCE3900C1D761 /* GreenCallButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenCallButtonCell.swift; sourceTree = "<group>"; };
+		DB063E71224F290000C1D761 /* BackspaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackspaceCell.swift; sourceTree = "<group>"; };
 		DB3600FA224B324200C98E4D /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
 		DB3600FC224B32F500C98E4D /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		DBE0A33D224DC4DE0034D2E0 /* DialedNumbersHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialedNumbersHeader.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 			children = (
 				DBF208642249D88800892986 /* AppDelegate.swift */,
 				DBF208662249D88800892986 /* ViewController.swift */,
+				DB063E71224F290000C1D761 /* BackspaceCell.swift */,
+				DB063E6F224DCE3900C1D761 /* GreenCallButtonCell.swift */,
 				DBE0A33D224DC4DE0034D2E0 /* DialedNumbersHeader.swift */,
 				DB3600FA224B324200C98E4D /* KeyCell.swift */,
 				DB3600FC224B32F500C98E4D /* UIView+Layout.swift */,
@@ -148,6 +154,8 @@
 				DBE0A33E224DC4DE0034D2E0 /* DialedNumbersHeader.swift in Sources */,
 				DB3600FD224B32F500C98E4D /* UIView+Layout.swift in Sources */,
 				DB3600FB224B324200C98E4D /* KeyCell.swift in Sources */,
+				DB063E72224F290000C1D761 /* BackspaceCell.swift in Sources */,
+				DB063E70224DCE3900C1D761 /* GreenCallButtonCell.swift in Sources */,
 				DBF208672249D88800892986 /* ViewController.swift in Sources */,
 				DBF208652249D88800892986 /* AppDelegate.swift in Sources */,
 			);
