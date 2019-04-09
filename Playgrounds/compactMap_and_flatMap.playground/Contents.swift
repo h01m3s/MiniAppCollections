@@ -1,3 +1,8 @@
 import UIKit
 
-var str = "Hello, playground"
+struct Store {
+    
+    let name: String
+    var electronicHardware: [String]?
+    
+}
