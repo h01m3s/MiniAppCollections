@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B1D1A31130C6CC2426A2F24 /* Pods_LBTAToolsStacking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C7F90BA631E8DA51E596A2 /* Pods_LBTAToolsStacking.framework */; };
+		DBA038DF22964463001C7D0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA038DE22964463001C7D0B /* AppDelegate.swift */; };
+		DBA038E122964463001C7D0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA038E022964463001C7D0B /* ViewController.swift */; };
+		DBA038E422964463001C7D0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA038E222964463001C7D0B /* Main.storyboard */; };
+		DBA038E622964464001C7D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA038E522964464001C7D0B /* Assets.xcassets */; };
+		DBA038E922964464001C7D0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA038E722964464001C7D0B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08845719BD404379FE8EE9C4 /* Pods-LBTAToolsStacking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBTAToolsStacking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBTAToolsStacking/Pods-LBTAToolsStacking.debug.xcconfig"; sourceTree = "<group>"; };
+		400E840F4BBBAD92BB35E7DB /* Pods-LBTAToolsStacking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBTAToolsStacking.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBTAToolsStacking/Pods-LBTAToolsStacking.release.xcconfig"; sourceTree = "<group>"; };
+		DBA038DB22964463001C7D0B /* LBTAToolsStacking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBTAToolsStacking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA038DE22964463001C7D0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBA038E022964463001C7D0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBA038E322964463001C7D0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBA038E522964464001C7D0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBA038E822964464001C7D0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBA038EA22964464001C7D0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9C7F90BA631E8DA51E596A2 /* Pods_LBTAToolsStacking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBTAToolsStacking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBA038D822964463001C7D0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B1D1A31130C6CC2426A2F24 /* Pods_LBTAToolsStacking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		709EF7F69130C7C8BAEC64C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08845719BD404379FE8EE9C4 /* Pods-LBTAToolsStacking.debug.xcconfig */,
+				400E840F4BBBAD92BB35E7DB /* Pods-LBTAToolsStacking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		86B4ED04CCD88402488D94B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9C7F90BA631E8DA51E596A2 /* Pods_LBTAToolsStacking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBA038D222964463001C7D0B = {
+			isa = PBXGroup;
+			children = (
+				DBA038DD22964463001C7D0B /* LBTAToolsStacking */,
+				DBA038DC22964463001C7D0B /* Products */,
+				709EF7F69130C7C8BAEC64C8 /* Pods */,
+				86B4ED04CCD88402488D94B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DBA038DC22964463001C7D0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBA038DB22964463001C7D0B /* LBTAToolsStacking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBA038DD22964463001C7D0B /* LBTAToolsStacking */ = {
+			isa = PBXGroup;
+			children = (
+				DBA038DE22964463001C7D0B /* AppDelegate.swift */,
+				DBA038E022964463001C7D0B /* ViewController.swift */,
+				DBA038E222964463001C7D0B /* Main.storyboard */,
+				DBA038E522964464001C7D0B /* Assets.xcassets */,
+				DBA038E722964464001C7D0B /* LaunchScreen.storyboard */,
+				DBA038EA22964464001C7D0B /* Info.plist */,
+			);
+			path = LBTAToolsStacking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBA038DA22964463001C7D0B /* LBTAToolsStacking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA038ED22964464001C7D0B /* Build configuration list for PBXNativeTarget "LBTAToolsStacking" */;
+			buildPhases = (
+				9FBB7B27865A1E09B995E6B0 /* [CP] Check Pods Manifest.lock */,
+				DBA038D722964463001C7D0B /* Sources */,
+				DBA038D822964463001C7D0B /* Frameworks */,
+				DBA038D922964463001C7D0B /* Resources */,
+				001E4160394FCC19669C58E0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LBTAToolsStacking;
+			productName = LBTAToolsStacking;
+			productReference = DBA038DB22964463001C7D0B /* LBTAToolsStacking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBA038D322964463001C7D0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Weijie Lin";
+				TargetAttributes = {
+					DBA038DA22964463001C7D0B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = DBA038D622964463001C7D0B /* Build configuration list for PBXProject "LBTAToolsStacking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBA038D222964463001C7D0B;
+			productRefGroup = DBA038DC22964463001C7D0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBA038DA22964463001C7D0B /* LBTAToolsStacking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBA038D922964463001C7D0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA038E922964464001C7D0B /* LaunchScreen.storyboard in Resources */,
+				DBA038E622964464001C7D0B /* Assets.xcassets in Resources */,
+				DBA038E422964463001C7D0B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		001E4160394FCC19669C58E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LBTAToolsStacking/Pods-LBTAToolsStacking-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LBTATools/LBTATools.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LBTATools.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LBTAToolsStacking/Pods-LBTAToolsStacking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FBB7B27865A1E09B995E6B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LBTAToolsStacking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBA038D722964463001C7D0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA038E122964463001C7D0B /* ViewController.swift in Sources */,
+				DBA038DF22964463001C7D0B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DBA038E222964463001C7D0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBA038E322964463001C7D0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBA038E722964464001C7D0B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBA038E822964464001C7D0B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBA038EB22964464001C7D0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DBA038EC22964464001C7D0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBA038EE22964464001C7D0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08845719BD404379FE8EE9C4 /* Pods-LBTAToolsStacking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZPWDFT65EV;
+				INFOPLIST_FILE = LBTAToolsStacking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.weijielin.LBTAToolsStacking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBA038EF22964464001C7D0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 400E840F4BBBAD92BB35E7DB /* Pods-LBTAToolsStacking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZPWDFT65EV;
+				INFOPLIST_FILE = LBTAToolsStacking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.weijielin.LBTAToolsStacking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBA038D622964463001C7D0B /* Build configuration list for PBXProject "LBTAToolsStacking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA038EB22964464001C7D0B /* Debug */,
+				DBA038EC22964464001C7D0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA038ED22964464001C7D0B /* Build configuration list for PBXNativeTarget "LBTAToolsStacking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA038EE22964464001C7D0B /* Debug */,
+				DBA038EF22964464001C7D0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBA038D322964463001C7D0B /* Project object */;
+}
