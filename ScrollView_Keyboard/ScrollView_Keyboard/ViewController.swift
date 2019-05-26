@@ -13,9 +13,8 @@ class ViewController: LBTAFormController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = #colorLiteral(red: 0.9490136504, green: 0.941204071, blue: 0.9488920569, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.9490196078, alpha: 1)
     }
-
 
 }
 
