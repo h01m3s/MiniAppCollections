@@ -12,28 +12,31 @@ let scale: CGFloat = UIScreen.main.bounds.width / 414
 
 struct ContentView: View {
     
-    let row: [CalculatorButtonItem] = [
-        .digit(1), .digit(2), .digit(3), .op(.plus)
-    ]
-    
     var body: some View {
-       
-        VStack(spacing: 12) {
+        
+        ZStack {
             
-            Spacer()
-            Text("0")
-                .font(.system(size: 76))
-                .minimumScaleFactor(0.5)
-                .padding(.trailing, 24)
-                .lineLimit(1)
-                .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
-            CalculatorButtonPad()
-                .padding(.bottom)
+            Color.black
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack(spacing: 12) {
+                
+                Spacer()
+                Text("0")
+                    .font(.system(size: 76))
+                    .foregroundColor(.white)
+                    .minimumScaleFactor(0.5)
+                    .padding(.trailing, 24)
+                    .lineLimit(1)
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
+                CalculatorButtonPad()
+                    .padding(.bottom)
+                
+            }
+            .scaleEffect(scale)
             
         }
-        .scaleEffect(scale)
-        
-        
+       
     }
 }
 
@@ -57,11 +60,22 @@ struct CalculatorButton: View {
     let backgroundColorName: String
     let action: () -> Void
     
+    var foregroundColor: Color {
+        switch title {
+        case CalculatorButtonItem.command(.clear).title,
+             CalculatorButtonItem.command(.flip).title,
+             CalculatorButtonItem.command(.percent).title:
+            return Color("commandForegroundColor")
+        default:
+            return .white
+        }
+    }
+    
     var body: some View {
         Button(action: action) {
             Text(title)
                 .font(.system(size: fontSize))
-                .foregroundColor(.white)
+                .foregroundColor(foregroundColor)
                 .frame(width: size.width, height: size.height)
                 .background(Color(backgroundColorName))
                 .cornerRadius(size.width / 2)
