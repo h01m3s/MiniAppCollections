@@ -58,18 +58,9 @@ struct CalculatorButton: View {
     let title: String
     let size: CGSize
     let backgroundColorName: String
-    let action: () -> Void
+    let foregroundColor: Color
     
-    var foregroundColor: Color {
-        switch title {
-        case CalculatorButtonItem.command(.clear).title,
-             CalculatorButtonItem.command(.flip).title,
-             CalculatorButtonItem.command(.percent).title:
-            return Color("commandForegroundColor")
-        default:
-            return .white
-        }
-    }
+    let action: () -> Void
     
     var body: some View {
         Button(action: action) {
@@ -92,9 +83,7 @@ struct CalculatorButtonRow: View {
         HStack {
             
             ForEach(row, id: \.self) { item in
-                CalculatorButton(title: item.title,
-                                 size: item.size,
-                                 backgroundColorName: item.backgroundColorName)
+                CalculatorButton(title: item.title, size: item.size, backgroundColorName: item.backgroundColorName, foregroundColor: item.foregroundColor)
                 {
                     print("Button: \(item.title)")
                 }
