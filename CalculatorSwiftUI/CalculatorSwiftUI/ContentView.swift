@@ -12,6 +12,8 @@ let scale: CGFloat = UIScreen.main.bounds.width / 414
 
 struct ContentView: View {
     
+    @State private var brain: CalculatorBrain = .left("0")
+    
     var body: some View {
         
         ZStack {
@@ -22,14 +24,14 @@ struct ContentView: View {
             VStack(spacing: 12) {
                 
                 Spacer()
-                Text("0")
+                Text(brain.output)
                     .font(.system(size: 76))
                     .foregroundColor(.white)
                     .minimumScaleFactor(0.5)
                     .padding(.trailing, 24)
                     .lineLimit(1)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
-                CalculatorButtonPad()
+                CalculatorButtonPad(brain: $brain)
                     .padding(.bottom)
                 
             }
@@ -76,6 +78,8 @@ struct CalculatorButton: View {
 
 struct CalculatorButtonRow: View {
     
+    @Binding var brain: CalculatorBrain
+    
     let row: [CalculatorButtonItem]
     
     var body: some View {
@@ -85,7 +89,7 @@ struct CalculatorButtonRow: View {
             ForEach(row, id: \.self) { item in
                 CalculatorButton(title: item.title, size: item.size, backgroundColorName: item.backgroundColorName, foregroundColor: item.foregroundColor)
                 {
-                    print("Button: \(item.title)")
+                    self.brain = self.brain.apply(item: item)
                 }
             }
             
@@ -96,6 +100,8 @@ struct CalculatorButtonRow: View {
 }
 
 struct CalculatorButtonPad: View {
+    
+    @Binding var brain: CalculatorBrain
     
     let pad: [[CalculatorButtonItem]] = [
         [.command(.clear), .command(.flip), .command(.percent), .op(.divide)],
@@ -109,7 +115,7 @@ struct CalculatorButtonPad: View {
         
         VStack(spacing: 8) {
             ForEach(pad, id: \.self) { row in
-                CalculatorButtonRow(row: row)
+                CalculatorButtonRow(brain: self.$brain, row: row)
             }
         }
         

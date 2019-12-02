@@ -14,6 +14,7 @@
 		DB633FFC2371291300A94CEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB633FFB2371291300A94CEB /* Preview Assets.xcassets */; };
 		DB633FFF2371291300A94CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB633FFD2371291300A94CEB /* LaunchScreen.storyboard */; };
 		DB6340072371349300A94CEB /* CalculatorButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6340062371349300A94CEB /* CalculatorButtonItem.swift */; };
+		DBB7BDBD2394C18900BB4DF8 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB7BDBC2394C18900BB4DF8 /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DB633FFE2371291300A94CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB6340002371291300A94CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB6340062371349300A94CEB /* CalculatorButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonItem.swift; sourceTree = "<group>"; };
+		DBB7BDBC2394C18900BB4DF8 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				DB633FF22371291300A94CEB /* AppDelegate.swift */,
 				DB633FF42371291300A94CEB /* SceneDelegate.swift */,
 				DB633FF62371291300A94CEB /* ContentView.swift */,
+				DBB7BDBC2394C18900BB4DF8 /* CalculatorBrain.swift */,
 				DB6340062371349300A94CEB /* CalculatorButtonItem.swift */,
 				DB633FF82371291300A94CEB /* Assets.xcassets */,
 				DB633FFD2371291300A94CEB /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 				DB633FF32371291300A94CEB /* AppDelegate.swift in Sources */,
 				DB633FF52371291300A94CEB /* SceneDelegate.swift in Sources */,
 				DB6340072371349300A94CEB /* CalculatorButtonItem.swift in Sources */,
+				DBB7BDBD2394C18900BB4DF8 /* CalculatorBrain.swift in Sources */,
 				DB633FF72371291300A94CEB /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
