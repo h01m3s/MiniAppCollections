@@ -31,7 +31,7 @@ struct ContentView: View {
                 Button("History: \(model.history.count)") {
                     self.editingHistory = true
                 }.sheet(isPresented: self.$editingHistory) {
-                    HistoryView(model: self.model)
+                    HistoryView(model: self.model, isPresented: self.$editingHistory)
                 }
                 
                 Text(model.brain.output)

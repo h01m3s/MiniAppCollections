@@ -11,6 +11,8 @@ import SwiftUI
 struct HistoryView: View {
     @ObservedObject var model: CalculatorModel
     
+    @Binding var isPresented: Bool
+    
     var body: some View {
         VStack{
             if model.totalCount == 0 {
@@ -30,6 +32,13 @@ struct HistoryView: View {
                     in: 0...Float(model.totalCount),
                     step: 1
                 )
+            }
+            
+            // Close Button Added
+            Button(action: {
+                self.isPresented = false
+            }) {
+                Text("Close")
             }
         }.padding()
     }
