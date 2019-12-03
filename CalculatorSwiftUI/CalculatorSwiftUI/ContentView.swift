@@ -15,6 +15,7 @@ struct ContentView: View {
 //    @State private var brain: CalculatorBrain = .left("0")
     @EnvironmentObject var model: CalculatorModel
     @State private var editingHistory = false
+    @State private var showingResult = false
     
     var body: some View {
         
@@ -37,9 +38,21 @@ struct ContentView: View {
                     .font(.system(size: 76))
                     .foregroundColor(.white)
                     .minimumScaleFactor(0.5)
-                    .padding(.trailing, 24)
+                    .padding(.horizontal, 24 * scale)
                     .lineLimit(1)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
+                    // Add alert to copy result
+                    .onTapGesture {
+                        self.showingResult.toggle()
+                    }
+                    .alert(isPresented: self.$showingResult) {
+                        Alert(title: Text(self.model.historyDetail), message: Text(self.model.brain.output), primaryButton: .default(Text("Copy")) {
+                            let pasteBoard = UIPasteboard.general
+                            pasteBoard.string = self.model.brain.output
+                            }, secondaryButton: .cancel()
+                        )
+                    }
+                    
                 
                 CalculatorButtonPad()
                     .padding(.bottom)
@@ -58,7 +71,7 @@ struct ContentView_Previews: PreviewProvider {
         Group {
             ContentView()
             
-            ContentView().previewDevice("iPhone SE")
+//            ContentView().previewDevice("iPhone SE")
         }
         
     }
