@@ -98,6 +98,8 @@ enum CalculatorBrain {
                 }
             case .equal:
                 if let result = currentOp.calculate(l: left, r: right) {
+                    print("equal pressed. result:\(result)")
+                    
                     return .left(result)
                 } else {
                     return .error
